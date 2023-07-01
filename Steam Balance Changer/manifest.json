@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Steam Balance Changer",
+  "version": "1.0.0",
+  "description": "Visual change Steam balance to zero.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://store.steampowered.com/*",
+        "*://steamcommunity.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
